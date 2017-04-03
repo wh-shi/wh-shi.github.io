@@ -5,7 +5,8 @@
 # Site
 title: Raccoon isn't a bear
 subtitle: Keep Moving
-description: java github server
+description: Raccoon's blog; github pages; github blog
+keywords: java,github,server
 author: Raccoon Shi
 language: en
 timezone: UTC
@@ -34,13 +35,13 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
 
 # Category & Tag
@@ -64,6 +65,33 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: BlueLake
+
+# BlueLake needs
+## page search
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: true
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
+## css compress
+stylus:
+  compress: true
+
+# comments
+# disqus_shortname: wh-shi-github-io
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
