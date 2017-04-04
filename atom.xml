@@ -1,4 +1,28 @@
-<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="Raccoon's blog; github pages; github blog"><meta name="keywords" content="java,github,server"><title>Mac下Hexo+GitHub搭建个人博客 | Raccoon isn't a bear</title><link rel="stylesheet" type="text/css" href="//fonts.css.network/css?family=Source+Code+Pro"><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.3.0"><link rel="stylesheet" type="text/css" href="/css/highlight.css?v=1.3.0"><link rel="Shortcut Icon" href="/favicon.ico"><link rel="bookmark" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Mac下Hexo+GitHub搭建个人博客</h1><a id="logo" href="/.">Raccoon isn't a bear</a><p class="description">Keep Moving</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> Home</i></a><a href="/archives/"><i class="fa fa-archive"> Archive</i></a><a href="/about/"><i class="fa fa-user"> About</i></a><a href="/atom.xml"><i class="fa fa-rss"> RSS</i></a></div></div><div id="layout" class="layout-g"><div class="layout-l"><div class="content_container"><div class="post"><h1 class="post-title">Mac下Hexo+GitHub搭建个人博客</h1><div class="post-meta">Apr 4, 2017<span> | </span><span class="category"><a href="/categories/GitHub/">GitHub</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-disqus-identifier="2017/04/04/Mac下Hexo-GitHub搭建个人博客/" href="/2017/04/04/Mac下Hexo-GitHub搭建个人博客/#disqus_thread" class="disqus-comment-count"></a><div class="post-content"><p>近来无意间发现了可通过GitHub来免费搭建自己的博客，无需申请域名，无需蛋疼的备案，无需购买主机，简直不能太兴奋了，于是这俩天研究了下，现在把搭建过程记录下来。</p>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Raccoon isn&#39;t a bear</title>
+  <subtitle>Keep Moving</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://wh-shi.github.io/"/>
+  <updated>2017-04-04T06:43:00.000Z</updated>
+  <id>https://wh-shi.github.io/</id>
+  
+  <author>
+    <name>Raccoon Shi</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac下Hexo+GitHub搭建个人博客</title>
+    <link href="https://wh-shi.github.io/2017/04/04/Mac%E4%B8%8BHexo-GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://wh-shi.github.io/2017/04/04/Mac下Hexo-GitHub搭建个人博客/</id>
+    <published>2017-04-03T18:39:50.000Z</published>
+    <updated>2017-04-04T06:43:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>近来无意间发现了可通过GitHub来免费搭建自己的博客，无需申请域名，无需蛋疼的备案，无需购买主机，简直不能太兴奋了，于是这俩天研究了下，现在把搭建过程记录下来。</p>
 <h1 id="1-安装Hexo"><a href="#1-安装Hexo" class="headerlink" title="1 安装Hexo"></a>1 安装Hexo</h1><h2 id="1-1-安装前提"><a href="#1-1-安装前提" class="headerlink" title="1.1 安装前提"></a>1.1 安装前提</h2><p>Hexo运行前需先安装<a href="https://nodejs.org" target="_blank" rel="external">Node.js</a>和<a href="https://git-scm.com/" target="_blank" rel="external">Git</a><br>Node.js安装好后，执行<code>node -v</code>验证成功与否</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">shiwenhuandeMacBook-Pro:~ shiwenhuan$ node -v</div><div class="line">v7.7.4</div></pre></td></tr></table></figure>
 <a id="more"></a>
@@ -73,12 +97,25 @@
 <li><p>更多配置请见<a href="https://github.com/wh-shi/wh-shi.github.io/tree/develop" target="_blank" rel="external">wh-shi.github.io</a></p>
 </li>
 </ol>
-</div><div class="tags"><a href="/tags/Hexo/">Hexo</a><a href="/tags/GitHub/">GitHub</a><a href="/tags/Disqus/">Disqus</a></div><div id="comments"><div id="disqus_thread"></div></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="widget"><div id="search-form"><div id="result-mask" class="hide"></div><label><input id="search-key" type="text" autocomplete="off" placeholder="请输入关键字..."/></label><div id="result-wrap" class="hide"><div id="search-result"></div></div><div class="hide"><template id="search-tpl"><div class="item"><a href="/{path}" title="{title}"><div class="title">{title}</div><div class="time">{date}</div><div class="tags">{tags}</div></a></div></template></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-gui"> Categories</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/GitHub/">GitHub</a><span class="category-list-count">1</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> Tags</i></div><div class="tagcloud"><a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/GitHub/" style="font-size: 15px;">GitHub</a> <a href="/tags/Disqus/" style="font-size: 15px;">Disqus</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-fei"> Archive</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-xie"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/04/Mac下Hexo-GitHub搭建个人博客/">Mac下Hexo+GitHub搭建个人博客</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-commt"> Recent Comments</i></div><script type="text/javascript" src="//raccoon-shi.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div></div></div></div><a id="totop" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.3.0" async></script><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">网站地图</a> |<a href="/atom.xml">订阅本站</a> |<span>联系博主：<a href="mailto:itshiwenhuan@gmail.com" target="_blank" class="fa fa-email"> </a><a href="http://weibo.com/u/3603755184" target="_blank" class="fa fa-weibo"></a><a href="https://github.com/wh-shi" target="_blank" class="fa fa-github"> </a></span></p><p><span> Copyright &copy;<a href="/." rel="nofollow">Raccoon Shi</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span><span><a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> Theme </a>by<a rel="nofollow" target="_blank" href="https://github.com/chaooo"> Charles.</a></span></p></div></div></div><script>var disqus_shortname = 'raccoon-shi';
-var disqus_identifier = '2017/04/04/Mac下Hexo-GitHub搭建个人博客/';
-var disqus_title = 'Mac下Hexo+GitHub搭建个人博客';
-var disqus_url = 'https://wh-shi.github.io/2017/04/04/Mac下Hexo-GitHub搭建个人博客/';
-(function() {
-  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();</script><script id="dsq-count-scr" src="//raccoon-shi.disqus.com/count.js" async></script><script type="text/javascript" src="/js/search.json.js?v=1.3.0"></script></body></html>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;近来无意间发现了可通过GitHub来免费搭建自己的博客，无需申请域名，无需蛋疼的备案，无需购买主机，简直不能太兴奋了，于是这俩天研究了下，现在把搭建过程记录下来。&lt;/p&gt;
+&lt;h1 id=&quot;1-安装Hexo&quot;&gt;&lt;a href=&quot;#1-安装Hexo&quot; class=&quot;headerlink&quot; title=&quot;1 安装Hexo&quot;&gt;&lt;/a&gt;1 安装Hexo&lt;/h1&gt;&lt;h2 id=&quot;1-1-安装前提&quot;&gt;&lt;a href=&quot;#1-1-安装前提&quot; class=&quot;headerlink&quot; title=&quot;1.1 安装前提&quot;&gt;&lt;/a&gt;1.1 安装前提&lt;/h2&gt;&lt;p&gt;Hexo运行前需先安装&lt;a href=&quot;https://nodejs.org&quot;&gt;Node.js&lt;/a&gt;和&lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;&lt;br&gt;Node.js安装好后，执行&lt;code&gt;node -v&lt;/code&gt;验证成功与否&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;shiwenhuandeMacBook-Pro:~ shiwenhuan$ node -v&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;v7.7.4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="GitHub" scheme="https://wh-shi.github.io/categories/GitHub/"/>
+    
+    
+      <category term="Hexo" scheme="https://wh-shi.github.io/tags/Hexo/"/>
+    
+      <category term="GitHub" scheme="https://wh-shi.github.io/tags/GitHub/"/>
+    
+      <category term="Disqus" scheme="https://wh-shi.github.io/tags/Disqus/"/>
+    
+  </entry>
+  
+</feed>
