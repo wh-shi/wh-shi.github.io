@@ -1,13 +1,7 @@
 # hexo robots.txt
 User-agent: *
 Allow: /
-Allow: /archives/
-
-Disallow: /js/
-Disallow: /css/
-Disallow: /fonts/
-Disallow: /vendors/
-Disallow: /fancybox/
+Allow: /archives
 
 Sitemap: https://wh-shi.github.io/sitemap.xml
 Sitemap: https://wh-shi.github.io/baidusitemap.xml
