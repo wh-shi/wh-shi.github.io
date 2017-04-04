@@ -3,6 +3,7 @@ title: Mac下Hexo+GitHub搭建个人博客
 tags:
   - Hexo
   - GitHub
+  - Disqus
 date: 2017-04-03 18:39:50
 categories: GitHub
 ---
@@ -20,6 +21,7 @@ Node.js安装好后，执行`node -v`验证成功与否
 shiwenhuandeMacBook-Pro:~ shiwenhuan$ node -v
 v7.7.4
 ```
+<!--more-->
 
 Git安装好后，执行`git --version`验证成功与否
 
@@ -78,7 +80,7 @@ drwxr-xr-x    3 shiwenhuan  staff   102  4  3 23:41 source/
 drwxr-xr-x    3 shiwenhuan  staff   102  4  3 23:41 themes/
 shiwenhuandeMacBook-Pro:wh-shi.github.io shiwenhuan$
 ```
-## 2.2 代码编译
+## 2.2 代码编译与运行
 
 ``` bash
 hexo generate
@@ -87,7 +89,51 @@ hexo server
 现在访问http://localhost:4000
 {% asset_img image/localhost_4000_init.png example localhost page %}
 
-## 2.3 Hexo详解
+## 2.3 主题选择
+
+Hexo默认的主题landscape很丑，[Hexo官网](https://hexo.io/themes/)有很多主题可供选择，点击主题名称即可看到相应的github项目以及如何在自己的网站中使用这些主题，本网站使用的是[BlueLake](https://github.com/chaooo/hexo-theme-BlueLake)
+
+## 2.4 评论系统
+评论系统基本采用[多说](http://dev.duoshuo.com/threads/58d1169ae293b89a20c57241)和[Disqus](https://disqus.com/home/)，但多说官网显示：
+> 因公司业务调整，非常遗憾的向大家宣布多说项目即将关闭。 我们将于2017年6月1日正式关停服务，在此之前您可以通过后台的数据导出功能导出自己站点的评论数据。 对此给您造成的不便，我们深表歉意，感谢您的一路相伴。
+
+所以果断选择Disqus，接入步骤如下：
+
+1. 在[Disqus官网](https://disqus.com/home/)注册账号
+
+2. 登录成功后点击`GET STARTED`
+  {% asset_img image/disqus_start.png example disqus start page %}
+
+3. 选择`i want to install Disqus on my site`
+  {% asset_img image/disqus_install.png example disqus install page %}
+
+4. Create a new site
+  填写信息，其中`Website Name`一栏下面的`Customize Your URL`可不填，系统会自动生成一个唯一的Shortname
+  {% asset_img image/disqus_create.png example disqus start page %}
+
+5. Select a plan
+  {% asset_img image/disqus_select_a_plan.png example disqus select a plan page %}
+  点击`Continue on basic`
+
+6. What platform is your site on?
+  选择`Jekyll`
+
+7. Jekyll install instructions
+  直接点击最下面的`Configure`即可，因为上面所说的配置在前面2.3的Hexo Theme中已设置
+
+8. Configure Disqus
+  {% asset_img image/disqus_config.png example disqus configuration page %}
+  注意`Website URL`不要写错
+
+9. Settings - General
+  {% asset_img image/disqus_general.png example disqus configuration page %}
+  将系统为你生成的唯一`Shortname`在项目所使用的主题的_config.yml中设置
+
+10. 效果展示
+ {% asset_img image/disqus_comment.png example disqus configuration page %}
+
+
+## 2.5 Hexo详解
 
 更多Hexo资料请参考[Hexo官网文档](https://hexo.io/zh-cn/docs/)
 
@@ -103,23 +149,21 @@ hexo server
 
 4. 关联远程仓库`wh-shi.github.io`
   ``` bash
-   ## 若未设置，请先设置
-   # git config --global user.name "******"
-   # git config --global user.email "******"
-   git remote add origin git@github.com:wh-shi/wh-shi.github.io.git
+  ## 若未设置，请先设置
+  # git config --global user.name "******"
+  # git config --global user.email "******"
+  git remote add origin git@github.com:wh-shi/wh-shi.github.io.git
   ```
-5. 修改_config.yml文件，通过git提交网站代码到远程仓库的master分支
-
-6. 执行hexo deploy即可将代码push到远程仓库master分支中
+5. 修改_config.yml文件
   ``` bash
   # Deployment
   ## Docs: https://hexo.io/docs/deployment.html
   deploy:
-  type: git
-  repo: git@github.com:wh-shi/wh-shi.github.io.git
-  ## https://wh-shi.github.io 访问的将是master分支的内容；网站其它内容的代码则放在默认的develop分支
-  branch: master
+  type: git ## 通过git提交
+  repo: git@github.com:wh-shi/wh-shi.github.io.git ## 远程仓库地址
+  branch: master ## 项目中生成可访问的静态资源（对应的是public目录下的内容）推送至master分支
   ```
+6. 执行hexo deploy即可将代码public中的内容推送到远程仓库master分支中（若推送失败请先设置ssh-key）
 
 7. 访问https://wh-shi.github.io
 
@@ -129,3 +173,4 @@ hexo server
   git commit -m "*****"
   git push origin develop
   ```
+9. 更多配置请见[wh-shi.github.io](https://github.com/wh-shi/wh-shi.github.io/tree/develop)
