@@ -1,7 +1,0 @@
-# hexo robots.txt
-User-agent: *
-Allow: /
-Allow: /archives
-
-Sitemap: https://wh-shi.github.io/sitemap.xml
-Sitemap: https://wh-shi.github.io/baidusitemap.xml
