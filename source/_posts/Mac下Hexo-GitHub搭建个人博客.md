@@ -13,19 +13,18 @@ categories: GitHub
 # 1 安装Hexo
 
 ## 1.1 安装前提
-
+  
 Hexo运行前需先安装[Node.js](https://nodejs.org)和[Git](https://git-scm.com/)
 Node.js安装好后，执行`node -v`验证成功与否
 
-``` bash
+``` shell
 shiwenhuandeMacBook-Pro:~ shiwenhuan$ node -v
 v7.7.4
 ```
-<!--more-->
 
 Git安装好后，执行`git --version`验证成功与否
 
-``` bash
+``` shell
 shiwenhuandeMacBook-Pro:~ shiwenhuan$ git --version
 git version 2.10.1
 ```
@@ -34,7 +33,7 @@ git version 2.10.1
 
 Node.js的安装已经包含了[npm](https://docs.npmjs.com/)的安装，现在执行`npm install -g hexo-cli`安装Hexo，完成后再执行`hexo -v`验证成功与否
 
-``` bash
+``` shell
 shiwenhuandeMacBook-Pro:node-js-example shiwenhuan$ hexo -v
 hexo-cli: 1.0.2
 os: Darwin 16.5.0 darwin x64
@@ -56,7 +55,7 @@ tz: 2016j
 
 ## 2.1 初始化
 
-``` bash
+``` shell
 hexo init example
 cd example
 npm install
@@ -64,7 +63,7 @@ npm install
 
 其中**example**为网站代码所在的目录
 
-``` bash
+``` shell
 shiwenhuandeMacBook-Pro:wh-shi.github.io shiwenhuan$ pwd
 /Users/shiwenhuan/GitHub/wh-shi.github.io
 shiwenhuandeMacBook-Pro:wh-shi.github.io shiwenhuan$ ll
@@ -82,7 +81,7 @@ shiwenhuandeMacBook-Pro:wh-shi.github.io shiwenhuan$
 ```
 ## 2.2 代码编译与运行
 
-``` bash
+``` shell
 hexo generate
 hexo server
 ```
@@ -148,14 +147,14 @@ Hexo默认的主题landscape很丑，[Hexo官网](https://hexo.io/themes/)有很
 3. 在本地网站代码所在的目录example下，执行`git flow init`，不懂[git-flow](https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow)的自行Google
 
 4. 关联远程仓库`wh-shi.github.io`
-  ``` bash
+  ``` shell
   ## 若未设置，请先设置
   # git config --global user.name "******"
   # git config --global user.email "******"
   git remote add origin git@github.com:wh-shi/wh-shi.github.io.git
   ```
 5. 修改_config.yml文件
-  ``` bash
+  ``` yml
   # Deployment
   ## Docs: https://hexo.io/docs/deployment.html
   deploy:
@@ -168,7 +167,7 @@ Hexo默认的主题landscape很丑，[Hexo官网](https://hexo.io/themes/)有很
 7. 访问https://wh-shi.github.io
 
 8. 执行一下命令即可将代码改动提交到远程仓库的develop分支中
-  ``` bash
+  ``` shell
   git add .
   git commit -m "*****"
   git push origin develop
